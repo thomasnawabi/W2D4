@@ -1,0 +1,47 @@
+head, body, header, ol, ul, section, img, aside, li, h1, h2,
+  p, a, figure, figcaption, label, input, form, option, select,
+  textarea, footer, nav, html {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*
+input[type="radio"] {
+      outline: none;
+      cursor: pointer;
+      background-image: url(../assets/star.png);
+    }*/
+
+    input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(../assets/star.png);
+    vertical-align: bottom;
+}
+
+select {
+      outline: none;
+      cursor: pointer;
+    }
+
+input:last-child :hover {
+      outline: none;
+      cursor: pointer;
+      background-color: gold;
+      -webkit-filter: brightness(90%)
+
+    }
+
+section > ol :nth-child(odd) {
+  background-color: lightgray;
+}
+
+h2 + form {
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
